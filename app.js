@@ -9,11 +9,6 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-var flagemoji = "🚩";
-var trashcanemoji = "🗑";
-var newsemoji = '📰';
-var staremoji = '⭐';
-
 var success = "<:success:376138120032288780>";
 var error = "<:error:376138218632118283>";
 
@@ -39,8 +34,6 @@ var constrain = function(num, min, max) {
     num = Math.min(Math.max(parseInt(num), min), max);
     return num;
 };
-
-let info = JSON.parse(fs.readFileSync("./info.json"));
 
 var replaceDaSpace = function(m) {
     for (var i = 0; i < m.length; i++) {
