@@ -66,7 +66,7 @@ var blocked = [
 const welcome = new Discord.WebhookClient('541082847490998272', 'ITVsSUEt8B3PWhwaoofpSGBz_6OCu6P6Sr-_mzkce1_Euy0dNufKxeRLkfsBcLY1SA66');
 client.on('guildMemberAdd', member => {
     //member.guild.channels.get("486553417880305675").send(`Welcome to The KA Server Monitor Server, ${member}!`);//507570286833565696
-    welcome.send(`Welcome to The KA Monitors Server, ${member}!`);
+    welcome.send(`Welcome to The Qrtvsx Server, ${member}!`);
     member.guild.channels.get('541082354542706719').send({
         embed: {
             title: `Member Joined`,
