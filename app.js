@@ -1,5 +1,3 @@
-//NDg2NTUyMTcxODE1NTAxODI0.DnAwow.tD-uNBcRaUvhQMRYHMxZ7j0TWTc
-
 const Discord = require("discord.js");
 const fs = require("fs");
 const client = new Discord.Client();
