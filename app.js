@@ -72,7 +72,7 @@ var blocked = [
     '486582258522652688',
 ];
 
-const welcome = new Discord.WebhookClient('507572248387911690', 'UE8bwv0Ttg6XkmdYLb4eFxdUWQqJe89VcSUkxM0VDYRZV2RxyD3ZmPeeDIZxdzBxS-HJ');
+const welcome = new Discord.WebhookClient('541082847490998272', 'ITVsSUEt8B3PWhwaoofpSGBz_6OCu6P6Sr-_mzkce1_Euy0dNufKxeRLkfsBcLY1SA66');
 client.on('guildMemberAdd', member => {
     //member.guild.channels.get("486553417880305675").send(`Welcome to The KA Server Monitor Server, ${member}!`);//507570286833565696
     welcome.send(`Welcome to The KA Monitors Server, ${member}!`);
