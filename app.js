@@ -7,8 +7,8 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-var success = "<:success:376138120032288780>";
-var error = "<:error:376138218632118283>";
+var success = "<:success:453917727443386379>";
+var error = "<:error:453917720556077056>";
 
 var genTime = function(t) {
     let num = 0;
