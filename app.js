@@ -62,9 +62,10 @@ var blocked = [
     '486550238149214208',
     '486582258522652688',
 ];
-//https://canary.discordapp.com/api/webhooks/541410788884217906/7R4cyG-RICumEjPNCK3_DfHCyoL6vYLe_gV74OpdFeJYrJIWpVoeh9HUlI28cQO9zMim
+//https://canary.discordapp.com/api/webhooks/541412850107809797/-VGcgJimFx-8CSfz_WEbWw1Yp-QWyGEJuUuHsKl68I1xCwCtjEPRoHLgVGJsB-Jhweyn
 const welcome = new Discord.WebhookClient('541082847490998272', 'ITVsSUEt8B3PWhwaoofpSGBz_6OCu6P6Sr-_mzkce1_Euy0dNufKxeRLkfsBcLY1SA66');
 const wh_general = new Discord.WebhookClient('541410788884217906', '7R4cyG-RICumEjPNCK3_DfHCyoL6vYLe_gV74OpdFeJYrJIWpVoeh9HUlI28cQO9zMim');
+const wh_bots = new Discord.WebhookClient('541412850107809797', '-VGcgJimFx-8CSfz_WEbWw1Yp-QWyGEJuUuHsKl68I1xCwCtjEPRoHLgVGJsB-Jhweyn');
 client.on('guildMemberAdd', member => {
     //member.guild.channels.get("486553417880305675").send(`Welcome to The KA Server Monitor Server, ${member}!`);//507570286833565696
     welcome.send(`Welcome to The Qrtvsx Server, ${member}!`);
@@ -318,6 +319,9 @@ client.on('message', message => {
     }
     if (message.channel.id == '541410728226193428') {
         wh_general.send(message.content);
+    }
+    if (message.channel.id == '541410764439945228') {
+        wh_bots.send(message.content);
     }
 }); //Message
 
